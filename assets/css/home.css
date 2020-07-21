@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    /* color: #7e7c7e;
+} */
+}
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+
+#content {
+    /* position: relative; */
+    margin: 100px auto;
+    width: 70%;
+    height:auto;
+    background: #7e7c7e;
+    margin: 100px auto;
+    border: 2px solid #7e7c7e;
+    text-overflow: hidden;
+}
+
+#main {
+    width: 70%;
+    height:auto;
+    background: #fffdff;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 3%;
+}
+
+input {
+    border: 0px;
+    padding-bottom: 20px;
+}
+
+#lower {
+    display: flex;
+    width: 100%;
+}
+
+select {
+    padding-bottom: 10px;
+    border: 0px;
+}
+
+.button {
+    display: inline;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+}
+
+button {
+    padding: 15px;
+    width: 35%;
+    color: white;
+    background: #434244;
+    border: 0px;
+    font-size: 1.2rem;
+}
+
+button i {
+    margin-right: 7px;
+}
+
+#delete {
+    background: #dc6a57;
+    width: 37%;
+    margin-left: 49%;
+    margin-top: -68px;
+}
+
+hr {
+    color: #f4f3f4;
+}
+
+#task {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    width:100%;
+    height:auto;
+}
+#taskdiv{
+    height: 10%;
+    width: 80%;
+}
+
+#taskdiv div {
+    background-color: khaki;
+    display: inline-block;
+     width:90%;
+     height:auto;
+     text-overflow:hidden;
+     overflow-x: scroll;
+    
+}
+#taskdiv div p{
+    text-align: left;
+    text-overflow: initial;
+    display: inline-block;
+    
+}
+
+
+
+.cat {
+    background: red;
+    width: 20%;
+    margin-right:10%;
+    border-radius: 3px;
+    padding: 0px;
+    font-size: 0.8rem;
+}
+
+#checked {
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+    background: #f4f3f4;
+    color: #f4f3f4;
+}

@@ -1,0 +1,170 @@
+<!-- <html>
+    <head>
+<title>
+    <%=title%>
+</title>
+<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="/css/home.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+       
+    </head>
+    <body>
+        <div id="maindiv">
+    <h1>TODO APP</h1>
+    <form action="/CreateList" method="POST">
+        <input id="in1" type="text" name="Purpose" placeholder="Add Description" required>
+        <input id ="in2" type="date" name="Date" placeholder="Due Date" required>
+        <!-- <input type="" name="type" placeholder="Category" required> -->
+        <!-- <select name="Category" id="cars">
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="School">School</option>
+            <option value="cleaning">Cleaning</option>
+          </select>
+          <button type="submit">
+            <i class="fas fa-plus">&nbsp;&nbsp;</i>
+              ADD TASK</button>
+               -->
+    <!-- </form>
+    <form action='/delete-task' method="POST">
+        <div>
+            <button type="submit" id="delete">
+                <i class="fa fa-trash"></i>Delete Tasks
+            </button>
+        </div>
+        <div class="div1">
+            <ul> -->
+                   
+                <!-- <% for (let i of to_do_list) { %> 
+                   <div class="details"> 
+                        <li>
+                            <div id="p1"><%= i.Purpose %></div>
+                            <div id ="p2"><%= i.Date %></div>
+                            
+                            <div id="p3"><%= i.Category%><i class="fas fa-calendar-alt icon"></i></div>
+                        </li>
+    
+    
+                        <div class="delete-button">
+                            
+                                <input class="checked" type="checkbox" name="checked" value=<%=i._id %> >
+    
+                            
+                        </div>
+                    </div>
+                    
+                <% } %>
+            </ul>
+        </div>
+        </form> -->
+
+
+    
+    
+<!-- </div>
+<script type="text/javascript" src="/js/home.js">
+</script>
+
+    </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+    <title>
+        <%=title%>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <div id="main">
+            <form action="/CreateList" method="POST">
+                <h1>Todo App</h1>
+                <hr>
+                <div class="box">
+                    <label for="Purpose">Description</label>
+                    <input type="text" placeholder="What do you need to do" name="Purpose" id="description" required>
+                </div>
+                <hr>
+                <div id="lower">
+                    <div class="box">
+                        <label for="Category">Category</label>
+                        <select name="Category" id="category">
+                            <option>Choose a Category</option>
+                            <option>Personal</option>
+                            <option>Work</option>
+                            <option>School</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <label for="Date">Due Date</label>
+                        <input type="date" id="datepicker" name="Date" required>
+                    </div>
+                </div>
+                <hr>
+                <div class="button">
+                    <button type="submit" id="add">
+                        <i class="fa fa-plus"></i>Add Task
+                    </button>
+                </div>
+            </form>
+            <form action='/delete-task' method="POST">
+                <div>
+                    <button type="submit" id="delete">
+                        <i class="fa fa-trash"></i>Delete Tasks
+                    </button>
+                </div>
+                <hr>
+
+                <% for(let i of to_do_list){ %>
+                    <div id="task">
+                        <div id="taskdiv">
+                            <input class="checked" type="checkbox" name="checked" value=<%=i._id %> >
+                            <div>
+                                <p>
+                                    <%= i.Purpose %>
+                                </p>
+                                <br>
+                                <p>
+                                    <%=i.Date%>
+                                </p>
+                            </div>
+                        </div>
+                        <% if( i.Category!="Choose a Category"){%>
+                            <button class="cat"><%= i.Category %></button>
+                            <%}%>
+                    </div>
+                    <hr>
+                    <% } %>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="/js/home.js">
+    </script>
+</body>
+
+</html>
